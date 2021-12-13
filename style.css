@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #4B088A;
+}
+#maincontainer{
+    width: 500px;
+    height: 500px;
+    margin-left: 120px;
+    margin-top: 50px;
+}
+#clock{
+    width: 280px;
+    height: 120px;
+    background-image: url("./clock.jpeg");
+    background-size: contain;
+    border: 1PX solid #4B088A;
+    left: 10%;
+    top: 10%;
+    position:absolute;
+}
+#leftcontainer{
+    width: 450px;
+    height: 250px;
+    background-color: white;
+    border-radius: 10px;
+    left: 10%;
+    top: 30%;
+    position:absolute;
+}
+.box{
+    width: 450px;
+    height: 80px;
+    display: flex;
+}
+#sun{
+    background-image: url("./sunn.png");
+    width: 5%;
+    height: 100%;
+    margin-left: 10%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+#sun::after{
+    content: "";
+    display: block;
+    width: 2px;
+    height: 30px;
+    background: grey;
+    left: 40%;
+    top: 70%;
+    position: relative;
+    
+}
+.option{
+    margin: 30px;
+}
+#set-wakeup-time{
+    padding: 5px;
+    border-radius: 5px;
+}
+#set-lunch-time{
+    padding: 5px;
+    border-radius: 5px;
+}
+#set-nap-time{
+    padding: 5px;
+    border-radius: 5px;
+}
+#lunch{
+    background-image: url("./lunch.jpg");
+    width: 7%;
+    height: 100%;
+    margin-left: 10%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+#lunch::after{
+    content: "";
+    display: block;
+    width: 2px;
+    height: 30px;
+    background: grey;
+    left: 40%;
+    top: 80%;
+    position: relative;
+    
+}
+#snooze{
+    background-image: url("./snooze.jpg");
+    width: 10%;
+    height: 100%;
+    margin-left: 8%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+#st{
+    top: 105%;
+    left: 0%;
+    position: absolute;
+    padding: 10px;
+    width: 200px;
+    background-image: linear-gradient(to right,#642EFE 2%, rgb(248, 44, 248), pink);
+    color: white;
+    border-radius: 5px;
+   
+}
+#st:hover{
+    background-image: linear-gradient(to left,#642EFE 2%, rgb(248, 44, 248), pink);
+    
+}
+.righttop{
+    left: 60%;
+    top: 10%;
+    position: absolute;
+    width: 400px;
+    height: 90px;
+    background-color: white;
+    border-radius: 5px;
+}
+.time{
+ 
+ width: 15%;
+ height: 100%;
+ float: left;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ font-size: 15px;
+}
+.time1{
+   padding-top: 20px;
+   display: flex;
+   justify-content: space-evenly;
+   
+   }
+.timming{
+    width: 15%;
+    height: 80%;
+    text-align: center;
+    background-color: rgba(255, 203, 211, 0.5);
+    border-radius: 5px;
+    line-height: 25px;
+    font-size: 15px;
+   }
+ .dot{
+      font-size: 40px;
+      animation: blink 1s infinite linear;
+   }
+   @keyframes blink{
+       0%, 100%{
+           opacity: 1;
+       }
+       30%{
+           opacity: 0.4;
+       }
+   }
+   .amm{
+    width: 15%;
+    height: auto;
+    padding-top: 15px;
+    text-align: center;
+    background-color: violet;
+    color: purple;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 5px;
+    font-size: 18px; 
+   }
+.back1{
+    left: 12%;
+    top: 10%;
+    position: absolute;
+    width: 300px;
+    height: 90px;
+    background-color: rgb(231, 142, 231);
+    border-radius: 5px;
+    z-index: -2;
+}
+.back2{
+    left: 2%;
+    top: 10%;
+    position: absolute;
+    width: 290px;
+    height: 90px;
+    background-color: rgb(240, 217, 240, 0.6);
+    border-radius: 5px;
+    z-index: -2;
+}
+.rightcontainer{
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    border-radius: 5px;
+    left: 60%;
+    top: 30%;
+    position:absolute;
+}
+#textcontainer{
+    width: 380px;
+    height: 40px;
+    padding: 20px 0px 0px 20px;
+    border-radius: 5px;
+}
+#imagecontainer{
+    width: 400px;
+    height: 310px;
+    background-image: url(./ballon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+   
+}
+#dynamic-block{
+    width: 450px;
+    height: 100px;
+    top: 75%;
+    left: 10%;
+    position: absolute;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: violet;
+    color:white;
+    
+
+}
+@media(max-width:500px){
+  
+
+    #clock{
+        width: 500px;
+        height: 150px;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+    }
+    .righttop{
+        top: -10%;
+        left: -10%;
+        position: relative;
+        width: 440px;
+        
+    }
+    #leftcontainer{
+        top: 70%;
+        left: -10%;
+        position: relative;
+        
+    }
+    .rightcontainer{
+        top: 70%;
+        left: -10%;
+        position: relative;
+        width: 470px;
+    }
+    #dynamic-block{
+        top: 80%;
+        left: -10%;
+        position: relative;
+    }
+
+}
